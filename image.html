@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>image</title>
+            <style>
+                    h1 {
+                      color: blue;
+                      font-family: verdana;
+                      font-size: 300%;
+                    }
+                    p  {
+                      color: red;
+                      font-family: courier;
+                      font-size: 160%;
+                    }
+            </style>
+    </head>
+    <body>
+    <h1>This my <mark>headline</mark></h1>
+    <p> This my <mark>paragraph </mark></p>
+        <img src="abc.jpg" alt="Home image" width="500" height="400">
+        
+        <h2> <b><i>Using The id Attribute in JavaScript</i></b></h2>
+        <p><span style="color:red">JavaScript can access an element with a specified id by using the getElementById() method:</span></p> 
+        <h1 id="myHeader">HI GOOD MORNING</h1>
+        <button onclick="displayResult()">View message for you.....click here</button>
+        <script>
+          function displayResult() 
+          {
+            document.getElementById("myHeader").innerHTML = "Have a nice day!";
+          }
+        </script>
+
+        <img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+        <button type="button" onclick="lightMethod(1)">Light ON</button>
+        <button type="button" onclick="lightMethod(0)">Light OFF</button>
+        <script>
+          function lightMethod(sw)
+          {
+            var pic;
+            if (sw == 0) {
+            pic = "pic_bulboff.gif"
+            } else {
+             pic = "pic_bulbon.gif"
+            }
+            document.getElementById('myImage').src = pic;
+          }
+        </script>
+
+
+
+
+
+
+
+    </body>
+    <p>HTML5 doest not require the body tag ,head tag and html tag  directly after doctype we can write our program pattern wise.</p>

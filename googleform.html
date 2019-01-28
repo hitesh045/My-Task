@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1> 
+            google forms
+        </h1>
+        <style>
+        
+        
+        
+         </style> 
+
+        <form action="/action_page.php"></form>
+            <fieldset>
+            <legend>Personal information:</legend>
+            First name:<br>
+            <input type="text" name="firstname" placeholder="First name">
+            <br>
+            Last name:<br>
+            <input type="text" name="lastname" placeholder="Last name">
+            <br>
+            <br>
+            <!--
+            radio button
+        -->
+            <form>
+                    <fieldset>
+                            <legend> Select your Gender:</legend>
+                    <input type="radio" name="gender" value="male" checked> Male<br>
+                    <input type="radio" name="gender" value="female"> Female<br>
+                    <input type="radio" name="gender" value="other"> Other  
+                </fieldset>
+
+            </form> 
+            <br>
+            <form action="/action_page.php">
+                Birthday (date and time):
+                <input type="datetime-local" name="bdaytime">
+                <br>
+                <br>
+                E-mail:
+                <input type="email" name="email">
+              
+              </form>
+            <br>
+            <form action="/action_page.php">
+                <fieldset>
+                <legend> Select your City:</legend>
+                <select name="City" size="2">
+                        <img src="abc.jpg" alt="Home image" >
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Nagpur">Nagpur</option>
+                  <option value="Pune">Pune</option>
+                  <option value="Kolkata">Kolkata</option>
+                </select>
+            </fieldset>
+                <br><br>
+               
+              </form>
+              <fieldset>
+                    <legend> Finally submit here:</legend>
+            <input type="submit" value="Submit">
+        </fieldset>
+            <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+            </fieldset>
+        </form>
+
+
+    </body>
+
+
+
+
+</html>
