@@ -1,97 +1,788 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MyFirstTask</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-<body>
-        <!--header Section-->
-        <div class="header">
-            <h1 style=font-size:300;>Programming Website</h1>
-            <p style=font-size:100;> <b>Make it and Prove it...!</b> </p>
-        </div>
-        <!-- Navigation Bar -->
-        <nav class="navbar">
-                <a href="https://www.w3schools.com/html/">HTML</a> 
-                <a href="https://www.w3schools.com/css/">CSS</a> 
-                <a href="https://www.w3schools.com/js/default.asp">JavaScript</a> 
-                <a href="https://www.w3schools.com/php/">PHP</a>
-                <a href="https://www.w3schools.com/sql/">SQL</a> 
-                <a href="https://www.w3schools.com/python/">Python</a> 
-                <a href="https://www.w3schools.com/bootstrap/default.asp">Bootstrap</a> 
-                <a href="https://www.w3schools.com/xml/">XML</a>
-        </nav>
-<!--body of program-->
-<div class="row">
-        <div class="col1">
-            <!--paragraph Section-->
-            <div class="para">
-                    <h1> be a part of programming life...WELCOME!!!</h1>
-                    <p>If you are not register then register first using google form... </p>
-                        <div class="form">
-                                <fieldset>
-                                        <legend> Google Form</legend>
-                        
-                        <br>
-                        <label for="fname" style=color:red><b>First Name</b></label><br><br>
-                            <input type="text" name="firstname" placeholder="First name...">
-                            <br>
-                        <label for="fname" style=color:red><b>Last Name</b></label><br><br>
-                            <input type="text" name="lastname" placeholder="Last name...">
-                            <br>
-                        
-                        <select id="country" name="country"><br>ß
-                            <option value="India">India</option>
-                            <option value="USA">USA</option>
-                            <option value="America">America</option>
-                            <option value="Japan">Japan</option>
-                        </select>
-                        <br>
-                        <input type="submit" value="Submit">
-                    </fieldset>
-                        </div>    
-            </div>
-             <!--Article Section-->
-            <div class="article">
-                    <figure>
-                            <img src="img/program.jpeg" alt="Programmimg code" >
-                            <img src="img/headerimage.jpeg" alt="computer lang" >
-                    </figure>
-            </div>
+    <head>
+            <title>Second Example</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1"> 
+            
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        </div>
-        <!--Aside page-->
-        <div class="col2">
-                <aside class="asidepage">
-                        <img src="img/computer.jpeg" alt="computer coding">
-                </aside>
-                <h2>What?</h2>
-                <p>Chania is a city on the island of Crete.</p>
-                <h2>Where?</h2>
-                <p>Crete is a Greek island in the Mediterranean Sea.</p>
-                <h2>How?</h2>
-                <p>You can reach Chania airport from all over Europe.</p>
+            <!-- Bootstrap core CSS -->
+            <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-        </div>
+            <!-- Custom fonts for this template -->
+            <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+            <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+            <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+            <!-- Plugin CSS -->
+            <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+            <!-- Custom styles for this template -->
+            <link href="css/freelancer.min.css" rel="stylesheet">
+
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+       
+        <!-- https://blackrockdigital.github.io/startbootstrap-freelancer/# -->
+    <!--header and navigation Section-->
+        <header>
+                <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                        <div class="container"> 
+                        <a href="" class="navbar-brand">Hitesh Studio Live</a>
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbaraid">
+                            <span class="navbar-toggler-icon"> </span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbaraid">
+                        <ul class="navbar-nav text-center ml-auto">
+                            <li class="nav-item">
+                                <a href="https://www.w3schools.com/js/default.asp" class="nav-link"> Home</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a href="https://www.w3schools.com/js/default.asp" class="nav-link"> Registration</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a href="https://www.w3schools.com/js/default.asp" class="nav-link">Information</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a href="https://www.w3schools.com/js/default.asp" class="nav-link">Location</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a href="https://www.w3schools.com/js/default.asp" class="nav-link">Contact</a>
+                            </li>
+            
+                        </ul>
+                        </div>
+                        </div>
+                    </nav>
+          
+        </header>
 
 
+        <style type="text/css">
+        hr.star-dark, hr.star-light {
+            max-width: 15rem;
+            padding: 0;
+            text-align: center;
+            border: none;
+            border-top: solid .25rem;
+            margin-top: 2.5rem;
+            margin-bottom: 2.5rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        hr {
+             box-sizing: content-box;
+            height: 0;
+            overflow: visible;
+            overflow-x: visible;
+            overflow-y: visible;
+             }
+        .text-uppercase {
+            text-transform: uppercase!important;
+            }
+        </style>
+
+     <!--Main Bootraps Section-->
+        <section>
+            <center>
+                <div id="Home" class="container-fluid bg-success" style="padding-top:100px;padding-bottom:100px;padding-left:50px;padding-right:50px">
+                    <div class="myImage"> 
+                        <img src="img/down10.jpeg" alt="My Image" border>
+                    </div>
+                    <div>
+                        <h1 class="text-uppercase mb-0">START BOOTSTRAP</h1>
+                        <hr class="star-light">
+                    </hr>
+                        <h2>Web Devloper- Graphic Artist- User Experience Designer</h2>
+                    </div>    
+                </div>
+            </center>
+        </section>
 
 
-</div>
-      <!--footer Section-->
-    <div class="row footer">
-        <footer >
-            <p>Posted by: Mr. Hitesh Chaudhari</p>
-            <p>Contact information: <a href="chaudharihitesh045@gmail.com">
-                    chaudharihitesh045@gmail.com</a>.</p>
-        </footer>
-    </div>
 
 
-              
+
+
+     <!--Images Section-->
+<style>
+    .text-uppercase {
+    text-transform: uppercase!important;
+}
+.text-center {
+    text-align: center!important;
+}
+.mb-0, .my-0 {
+    margin-bottom: 0!important;
+}
+
+section h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2rem;
+    font-family: Montserrat;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+body {
+    font-family: Lato;
+}
+.d-block {
+    display: block!important;
+    border-width: 30;
+    box-sizing: border-box;
+}
+.img-fluid {
+    border-image-width: 200;
+    max-inline-size: 99;
+    max-width: 100%;
+    height: auto;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+}
+.fa, .fas {
+    font-weight: 900;
+}
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+.fa-3x {
+    font-size: 3em;
+}
+
+</style>
+
+        
+                <section class="portfolio" id="portfolio">
+                <div id="Images" class="container" style="padding-top:100px;padding-bottom:100px;padding-left:50px;padding-right:50px">
+                    <h2 class="text-center text-uppercase text-secondary mb-0">PORTFOLIO</h1>
+                    <hr class="star-light">
+                        <!-- ::after -->
+                    </hr>
+                        <div class="row">
+                             <!-- <div class="col-md-6 col-lg-4">
+                                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+                                      <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                          <i class="fas fa-search-plus fa-3x">
+                                              ::after
+                                          </i>
+                                        </div>
+                                      </div>
+                                      <figure>
+                                            <img class="img-fluid" src="img/down1.jpeg"/>
+                                        </figure>  
+                                    </a>
+                                  </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+                                      <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                          <i class="fas fa-search-plus fa-3x">
+                                              ::after
+                                          </i>
+                                        </div>
+                                      </div>
+                                      <figure>
+                                            <img class="img-fluid" src="img/down2.jpeg"/>
+                                        </figure>
+                                    </a>
+                                  </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+                                      <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                          <i class="fas fa-search-plus fa-3x">
+                                              ::after
+                                          </i>
+                                        </div>
+                                      </div>
+                                      <figure>
+                                            <img class="img-fluid" src="img/down3.jpeg"/>
+                                        </figure>  
+                                    </a>
+                                  </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+                                      <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                          <i class="fas fa-search-plus fa-3x">
+                                              ::after
+                                          </i>
+                                        </div>
+                                      </div>
+                                      <figure>
+                                            <img class="img-fluid" src="img/down4.jpeg"/>
+                                        </figure>  
+                                    </a>
+                                  </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+                                      <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                          <i class="fas fa-search-plus fa-3x">
+                                              ::after
+                                          </i>
+                                        </div>
+                                      </div>
+                                      <figure>
+                                            <img class="img-fluid" src="img/down5.jpeg"/>
+                                        </figure>  
+                                    </a>
+                                  </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+                                      <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                          <i class="fas fa-search-plus fa-3x">
+                                              ::after
+                                          </i>
+                                        </div>
+                                      </div>
+                                      <figure>
+                                            <img class="img-fluid" src="img/down6.jpeg"/>
+                                        </figure>  
+                                    </a>
+                                  </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+                                      <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                          <i class="fas fa-search-plus fa-3x">
+                                              ::after
+                                          </i>
+                                        </div>
+                                      </div>
+                                      <figure>
+                                            <img class="img-fluid" src="img/down7.jpeg"/>
+                                        </figure>  
+                                    </a>
+                                  </div>
+                            </div>
+
+                           
+                            <div class="col-md-6 col-lg-4">
+                                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+                                      <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                          <i class="fas fa-search-plus fa-3x">
+                                              ::before
+                                          </i>
+                                        </div>
+                                      </div>
+                                      <figure>
+                                            <img class="img-fluid" src="img/down8.png"/>
+                                        </figure>  
+                                    </a>
+                                  </div>
+                            </div>  
+                              -->
+                              <!-- <div class="col-sm-4">
+                                    <div class="panel panel-primary">
+                                     
+                                      <div class="panel-body"><img  src="img/down2.jpeg" class="img-responsive" style="width:90%" alt="Image"></div>
+                                      
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                        <div class="panel panel-primary">
+                                         
+                                          <div class="panel-body"><img src="img/down3.jpeg" class="img-responsive" style="width:80%" alt="Image"></div>
+                                          
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-4">
+                                            <div class="panel panel-primary">
+                                             
+                                              <div class="panel-body"><img  src="img/down4.jpeg" class="img-responsive" style="width:80%" alt="Image"></div>
+                                              
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-4">
+                                                <div class="panel panel-primary">
+                                                 
+                                                  <div class="panel-body"><img  src="img/down5.jpeg" class="img-responsive" style="width:90%" alt="Image"></div>
+                                                  
+                                                </div>
+                                              </div>
+                                              <div class="col-sm-4">
+                                                    <div class="panel panel-primary">
+                                                     
+                                                      <div class="panel-body"><img src="img/down6.jpeg" class="img-responsive" style="width:80%" alt="Image"></div>
+                                                      
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-sm-4">
+                                                        <div class="panel panel-primary">
+                                                         
+                                                          <div class="panel-body"><img src="img/down7.jpeg" class="img-responsive" style="width:80%" alt="Image"></div>
+                                                          
+                                                        </div>
+                                                      </div> -->
     
-</body>
+
+ 
+                            <div class="col-md-6 col-lg-4">
+                                    
+                                <a class="portfolio-item d-block mx-auto" >
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                          <i class="fas fa-search-plus fa-3x">
+                                              
+                                          </i>
+                                        </div>
+                                      </div>
+                                    <figure >
+                                        <img class="img-fluid" src="img/down7.jpeg"/>
+                                    </figure>   
+                                </a>
+                           
+                            </div>  
+                            <div class="col-md-6 col-lg-4">
+                                <a class="portfolio-item d-block mx-auto" >
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                          <i class="fas fa-search-plus fa-3x">
+                                              
+                                          </i>
+                                        </div>
+                                      </div>
+                                    <figure >
+                                        <img class="img-fluid" src="img/down2.jpeg"/>
+                                    </figure>
+                                   
+                                </a>
+                            </div> 
+                             <div class="col-md-6 col-lg-4">
+                                <a class="portfolio-item d-block mx-auto"  >
+                                    
+                                    <figure >
+                                        <img class="img-fluid" src="img/down3.jpeg"/>
+                                    </figure>
+                                    
+                                </a>
+                            </div> 
+                            <div class="col-md-6 col-lg-4">
+                                <a class="portfolio-item d-block mx-auto" >
+                                    
+                                    <figure>
+                                        <img class="img-fluid" src="img/down4.jpeg"/>
+                                    </figure>
+                                </a>
+                            </div> 
+                            <div class="col-md-6 col-lg-4">
+                                <a class="portfolio-item d-block mx-auto"  >
+                                   
+                                    <figure >
+                                        <img class="img-fluid" src="img/down5.jpeg"/>
+                                    </figure>
+                                    
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a class="portfolio-item d-block mx-auto" >
+                                   
+                                    <figure >
+                                        <img class="img-fluid" src="img/down6.jpeg" width="280"/>
+                                    </figure>  
+                                </a>
+                            </div>  
+                            <!-- <div class="col-md-6 col-lg-4">       
+                                <a href="img/down7.jpeg" >
+                                    
+                                    <figure>
+                                        <img src="img/down7.jpeg" width="280"/>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="img/down8.png" >
+                                    
+                                    <figure>
+                                        <img src="img/down8.png" width="420"/>
+                                    </figure>        
+                                </a>
+                            </div>  -->
+                        </div>
+                </div>
+                </section>
+        
+
+
+
+
+
+    <!--About Section-->
+<style>
+.ml-auto, .mx-auto {
+    margin-left: auto!important;
+}
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.mr-auto, .mx-auto {
+    margin-right: auto!important;
+}
+.btn-xl {
+    padding: 1rem 1.75rem;
+    padding-top: 1rem;
+    padding-right: 1.75rem;
+    padding-bottom: 1rem;
+    padding-left: 1.75rem;
+    font-size: 1.25rem;
+}
+.btn-outline-light {
+    color: #f8f9fa;
+    border-color: #f8faf8;
+    border-top-color: rgb(248, 249, 250);
+    border-right-color: rgb(248, 249, 250);
+    border-bottom-color: rgb(248, 249, 250);
+    border-left-color: rgb(248, 249, 250);
+}
+.fa, .fas {
+    font-weight: 900;
+}
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+
+.mr-2, .mx-2 {
+    margin-right: .5rem!important;
+}
+.fa, .fab, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+</style>
+
+         <section>
+                <center>
+                    <div id="About" class="container-fluid bg-warning" style="padding-top:100px;padding-bottom:100px;padding-left:50px;padding-right:50px">
+                        <div class="row">   
+                            <div class="col-lg-12">
+                                <h1>ABOUT ME</h1>
+                                <hr class="star-light">
+                            </hr>
+                            </div>
+                        <div class="row">
+                      
+
+                           
+                            <div class="col-lg-3 col-md-4 col-sm-6 ml-auto"  style="padding-top:100px;padding-bottom:100px;padding-left:50px;padding-right:100px"  >
+                                <div class="lead"  >
+                                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. 
+                                             The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                                </div>
+                            </div> 
+                       
+                        
+                            <div class="col-lg-3 col-md-4 col-sm-6 mr-auto"   style="padding-top:100px;padding-bottom:100px;padding-left:0px;padding-right:100px"  >  
+                                <div class="lead" >
+                                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects,
+                                            this template is the perfect starting point!</p>
+                                </div>
+                            </div> 
+                        </div>
+                    
+                    </div>
+                    
+                    <!-- Button to Open the Modal -->
+                   <!-- <div>
+               
+                <input class="btn btn-xl btn-outline-light " background-color="green"  type="submit" value="Download Now">
+                
+                <i class="fas fa-download mr-2"></i>
+                   </input>
+                   </div>  -->
+                   <div class="text-center mt-4">
+                       <a class="btn btn-xl btn-outline-light " href="#">
+                            <i class="fa fa-download mr-2"></i>Download Now
+
+                       </a>
+
+                   </div><i class="fa fa-download" aria-hidden="true"></i>
+
+                    </div>
+                </center>
+         </section>
+       
+
+
+        
+
+    <!--Contact Me section-->
+
+<style>
+.pb-2, .py-2 {
+    padding-bottom: .5rem!important;
+}
+.mb-0, .my-0 {
+    margin-bottom: 0!important;
+}
+.floating-label-form-group label {
+    font-size: .85em;
+    line-height: 1.764705882em;
+    position: relative;
+    z-index: 0;
+    top: 2em;
+    display: block;
+    margin: 0;
+    /* -webkit-transition: top .3s ease,opacity .3s ease; */
+    transition: top .3s ease,opacity .3s ease;
+    /* vertical-align: middle; */
+    /* vertical-align: baseline; */
+    opacity: 0;
+}
+.floating-label-form-group input, .floating-label-form-group textarea {
+    font-size: 1.5em;
+    position: relative;
+    z-index: 1;
+    padding-right: 0;
+    padding-left: 0;
+    resize: none;
+    border: none;
+    border-top-color: initial;
+    border-top-style: none;
+    border-top-width: initial;
+    border-right-color: initial;
+    border-right-style: none;
+    border-right-width: initial;
+    border-bottom-color: initial;
+    border-bottom-style: none;
+    border-bottom-width: initial;
+    border-left-color: initial;
+    border-left-style: none;
+    border-left-width: initial;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-radius: 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background: 0 0;
+    background-image: initial;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+.btn {
+    border-width: 2px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+}
+.btn-primary {
+    background-color: #18bc9c;
+    border-color: #18bc9c;
+    border-top-color: rgb(24, 188, 156);
+    border-right-color: rgb(24, 188, 156);
+    border-bottom-color: rgb(24, 188, 156);
+    border-left-color: rgb(24, 188, 156);
+}
+.btn-xl {
+    padding: 1rem 1.75rem;
+    padding-top: 1rem;
+    padding-right: 1.75rem;
+    padding-bottom: 1rem;
+    padding-left: 1.75rem;
+    font-size: 1.25rem;
+}
+
+</style>
+ <style type="text/css">
+    .floating-label-form-group {
+        position: relative;
+        border-bottom: 1px solid #e9ecef}
+        .text-uppercase {
+    text-transform: uppercase!important;
+}
+                </style>
+
+
+
+        <section>
+                <center>
+                    <div id="Contact" class="container-fluid " style="padding-top:100px;padding-bottom:100px;padding-left:50px;">
+                    
+                       <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                       
+                        <hr class="star-dark mb-5"></hr>
+                        <div>
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+            <form >
+                  <div class="control-group">
+                      <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                          <label > Name</label>
+                            <input type="text" class="form-control" placeholder="First name..." data-validation-required-message="Please enter your name.">
+                            <p class="help-block text-danger"></p>
+                      </div>
+                  </div>
+                  <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label >Email ID</label>
+                              <input type="text" class="form-control" placeholder="Email ID..." data-validation-required-message="Please enter your Email ID.">
+                              <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label > Phone Number</label>
+                                  <input type="text" class="form-control" placeholder="Phone Number..." data-validation-required-message="Please enter your Phone Number.">
+                                  <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label > Message</label>
+                                      <input type="text" class="form-control" placeholder="message..." data-validation-required-message="Please enter your Message.">
+                                      <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+
+                    <!-- <legend> Google Form</legend>
+                    <br>
+                    <div>
+                        
+                        <p class="help-block text-danger"></p>
+                    </div>
+                   
+                     <input type="text" class="form-control floating-label-form-group controls mb-0 pb-2" style="padding-right:50px; position: relative;border-bottom: 1px solid #e9ecef;"  placeholder="Last name...">
+                    <input type="email" class="form-control floating-label-form-group controls mb-0 pb-2" id="email" placeholder="Enter email...">
+                    <input type="Number" class="form-control floating-label-form-group controls mb-0 pb-2" id="email" placeholder="Enter phone Number...">
+
+                   <select class="form-control" id="country" name="country">
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="America">America</option>
+                        <option value="Japan">Japan</option>
+                    </select> -->
+                    <br><br>
+                    <input class="btn btn-primary btn-xl" background-color="green"  type="submit" value="Send">
+                 
+                </div>    
+            </form>
+    </div>
+</div>
+
+                           
+                    </div>
+                </center>
+
+        </section>
+    
+        
+
+        
+       
+        
+        
+     <!--Footer Scetion-->
+     <!--
+    </center>
+        <section class="jumbotron text-center" style="margin-bottom:0">
+            <h1>Location</h1>    
+            <p>Sion,Mumbai,Maharashtra</p>
+            <h1>AROUND THE WEB</h1>    
+            <p>FACEBOOK,GOOGLE+,TWITEER</p>
+            <h1>ABOUT FREELANCER</h1>    
+            <p>Freelance is a free to use, open source Bootstrap theme created by Start Bootstrap.</p>
+            container-fluid 
+        </section>
+    </center>  
+    -->
+
+    
+
+<style>
+    .footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #2c3e50;
+    color: #fff;
+}
+.text-center {
+    text-align: center!important;
+}
+/* @media (min-width: 1200px)
+.container-fuild {
+    max-width: 1140px;
+} */
+</style>
+        <footer class="footer text-center">
+        <center>
+            <div class="container-fuild " style="padding-top:30px;padding-bottom:30px;padding-left:200px;padding-right:0px">
+                <div class="row">  
+                    <div class="col-lg-3 col-md-4 col-sm-6" float="padding-left" width="80" >
+                        <div class="centered"  >
+                            <h1>Location</h1>    
+                            <p>Sion,Mumbai,Maharashtra</p>
+                        </div>
+                    </div> 
+                    <div class="col-lg-3 col-md-4 col-sm-6" float="padding-left" width="80" >  
+                        <div class="centered" >
+                            <h1>AROUND THE WEB</h1>    
+                            <p>FACEBOOK,GOOGLE+,TWITEER</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6" float="padding-left" width="80" >  
+                        <div class="centered" >
+                            <h1>ABOUT FREELANCER</h1>    
+                            <p>Freelance is a free to use, open source Bootstrap theme created by Start Bootstrap.</p>
+                        </div>
+                    </div>
+                    
+                </div>  
+                <center>
+                <div>
+                        <p>Copyright@ Your Website 2018</p>
+                    </div>
+                </center>
+            </div>
+        </center>
+    </footer>
+    
+
+    </body>
 </html>
