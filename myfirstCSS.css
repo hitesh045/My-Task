@@ -1,0 +1,141 @@
+.hitesh
+{
+    background-color:red;
+    font-size: 30px;  
+}
+body 
+{
+    background-image: url("blacklightimage.jpg");
+                  
+}
+/*
+p
+{  
+    border-left: 6px solid red;
+    border-right: 6px solid red;
+    background-color:lawngreen;
+}*/
+p.final
+{  
+    border-left: 6px solid red;
+    border-right: 6px solid red;
+    background-color:lawngreen;
+}
+p.large
+{
+    border-left: 6px solid red;
+    border-right: 6px solid red;
+    background-color:lightpink;
+    border-bottom: 5px solid black;
+
+}
+p.one 
+{
+    border-style: solid;
+    border-color: red;
+}
+  
+p.two 
+{
+    border-style: solid;
+    border-color: green;
+} 
+  
+p.three 
+{
+    border-style: solid;
+    border-color: red green blue yellow;
+} 
+div 
+{
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    background-color: lightblue;
+    background-image: url("abc.jpg");
+  }
+  .small
+  {
+    font-variant: small-caps;
+  }
+  .fa
+  {
+    font-size:48px;color:red;
+    margin-left: 5px;;
+  margin-right: auto;
+  }
+
+  a
+  {
+    text-align: center; 
+  }
+  /* unvisited link */
+a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
+ul.xyz
+{
+    color: black;
+   
+   list-style-type: square ;
+    
+}
+table,th,td
+{
+    border: 1px solid blanchedalmond
+}
+table
+{
+    /*border-collapse: collapse;*/
+    border-inline-end-width: 30px;
+    width: 20px;
+    line-height: 20px;
+   /* overflow-x:auto;
+    background-color:;*/
+    margin-left: auto;
+  margin-right: auto;
+
+}
+img {
+   
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+  p.image
+  {
+      color:black;
+      font-style: oblique;
+      background-image: url('download.jpeg');
+      background-repeat: no-repeat;
+      width: 5000px;
+      height:880px;
+
+  }
+  p.centerp
+  {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    border: 3px solid yellowgreen;
+    padding: 10px;   
+  }
