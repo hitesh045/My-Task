@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body>
+        <script>
+            var app = angular.module('myApp', []);
+            app.controller('myCtrl', function($scope) 
+            {
+                $scope.firstName= "John";
+                $scope.lastName= "Doe";
+            });
+        </script>
+        <p>Try to change the names.</p>
+        <div ng-app="myApp" ng-controller="myCtrl">
+            First Name: <input type="text" ng-model="firstName"><br>
+            Last Name: <input type="text" ng-model="lastName"><br>
+            <br>
+            Full Name: <strong>{{firstName + " " + lastName}}</strong>
+        </div>
+        <h2>Angular JS</h2>
+        <div ng-app="">
+            <table border="0">
+                <tr>
+                    <td><input type="checkbox" ng-model="enableDisableButton"> Disable Button</td>
+                    <td><button ng-disabled="enableDisableButton"> Click Me</button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" ng-model="showHide1"> Hide Button</td>
+                    <td><button ng-show="showHide1"> Click Me</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+
+            </table>
+
+        </div>
+        <div>
+            <script>
+                var jasonobject=
+                {
+                    "employee":
+                    [
+                        {"Name" : "Hitesh", "age" : 22},
+                        {"Name" : "JOhn", "age" : 32  },
+                        { "Name" : "Deo", "age" : 42},
+                        { "Name" : "Jony", "age" : 52  }
+                    ]
+                }
+                document.write(jasonobject.employee[0].Name);
+            </script>
+        </div>
+    </body>
+</html>

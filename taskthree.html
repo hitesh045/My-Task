@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+            <title>JsonConnectionWithTheHTMLFile</title>
+            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+            <script >
+                var myApp=angular.module('myApp',[]);
+                myApp.controller('myController',function($scope,$http)
+                {
+                    $http.get('records.json').then(function(response)
+                    {
+                        $scope.myData=response;
+                    }
+                    );
+                });
+            </script>
+    </head>
+    <body ng-app="myApp">
+        <div ng-controller="myController">
+        <table border="1">
+            <tr ng-repeat="data in myData">
+                <td>{{ data.Name}}</td>
+                <td>{{data.age}}</td>
+
+            </tr>
+
+        </table>
+    </div>
+    </body>
+</html>
+<!-- https://www.youtube.com/watch?v=Q0BZV7P0Bqs -->

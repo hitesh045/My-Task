@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<HTML> 
+    <head>
+        <title>Angular JS Table</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    </head>
+    <body>
+        <div ng-app="myApp" >
+            <div ng-controller="myCtrl">
+            <!-- <table ng-controller="myCtrl" border="1"> -->
+            <table border="1">
+                <tr>
+                    <th >EmpName </th>
+                    <!-- <td ng-if="$even">{{ x.Name }}</td> -->
+                    <th >EmpAge </th>
+                    <!-- <td ng-if="$even">{{ x.age }}</td> -->
+                </tr>
+                <tr ng-repeat="x in companyEmp">
+                  
+                    <td>{{ x.Name }}</td>
+                    <td>{{ x.age }}</td>
+                </tr>
+            </table>
+        </div>
+        </div>
+        <script type="text/javascript">
+            var app=angular.module("myApp",[]);
+            app.controller("myCtrl",function($scope)
+            {
+                $scope.companyEmp =                
+                [
+
+                    {Name : "Hitesh",   age : 22},
+                    {Name : "JOhn", age : 32  },
+                    { Name : "Deo",   age : 42},
+                    { Name : "Jony",   age : 52  },
+                
+                ]
+            
+            }
+            );
+
+        </script>
+    </body>
+</HTML>

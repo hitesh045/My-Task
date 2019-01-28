@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angular Js controller</title>
+        <script  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body nr-app="myModule">
+        <div ng-controller="dataController">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Emp Name</th>
+                        <th> Emp age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="x in emp">
+                        <td>{{x.Name[1]}}</td>
+                        <td>{{x.age}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <script>
+                var app = angular.module('myModule', []);
+                app.controller('dataController', function($scope, $http) {
+                  $http.get('records.json').success(function(response) {
+                    $scope.records= response.data;
+                  });
+                });
+                </script>
+
+
+    </body>
+</html>
